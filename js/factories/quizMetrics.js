@@ -1,18 +1,18 @@
-(function(){
-  angular.module('turtleFacts')
-  .factory("quizMetrics", QuizMetrics);
+(function() {
+    angular.module('turtleFacts')
+        .factory("quizMetrics", QuizMetrics);
 
-  function QuizMetrics (){
-    var quizObj = {
-        quizActive: false,
-        changeState: changeState
-    };
+    function QuizMetrics() {
+        var quizObj = {
+            quizActive: false,
+            changeState: changeState
+        };
 
-    return quizObj;
+        return quizObj;
 
-    function changeState(state){
-      quizObj.quizActive = state;
+        function changeState(state) {
+            quizObj.quizActive = state;
+        }
     }
-  }
 
 })();
