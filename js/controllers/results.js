@@ -37,12 +37,12 @@
             quizMetrics.changeState("results", false);
             quizMetrics.numCorrect = 0;
 
-            for(var i = 0; i < DataService.quizQuestions.length; i++){
-              //loop through questions in JSON and set to default values
-              var data = DataService.quizQuestions[i];
+            for (var i = 0; i < DataService.quizQuestions.length; i++) {
+                //loop through questions in JSON and set to default values
+                var data = DataService.quizQuestions[i];
 
-              data.selected = null;
-              data.correct = null;
+                data.selected = null;
+                data.correct = null;
             }
         }
     }
