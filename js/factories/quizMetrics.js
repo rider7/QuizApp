@@ -1,5 +1,5 @@
 (function() {
-    angular.module('turtleFacts')
+    angular.module('csharpFacts')
         .factory("quizMetrics", QuizMetrics);
 
     QuizMetrics.$inject = ['DataService'];

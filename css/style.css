@@ -34,7 +34,29 @@
 .image-answer.bg-danger {
     border: 3px solid #b74848;
 }
-
+.btn-warning {
+  background-color: #F8B232
+}
+.btn-primary {
+  background-color: #082C46
+}
+.navbar {
+  height: 100px;
+}
+.icon-bar {
+  color: #082C46;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glyphicon-pencil {
+  background-color: #082C46;
+}
+.btn-info {
+  background-color: #082C46;
+}
 /*colors*/
 /*blue #082C46
 yellow #F8B232*/

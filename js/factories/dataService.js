@@ -1,10 +1,10 @@
 (function() {
-    angular.module("turtleFacts")
+    angular.module("csharpFacts")
         .factory("DataService", DataFactory);
 
     function DataFactory() {
         var dataObj = {
-            turtlesData: turtlesData,
+            csharp_Data: csharp_Data,
             quizQuestions: quizQuestions,
             correctAnswers: correctAnswers
         };
@@ -30,7 +30,7 @@
         correct: null
     }, {
         type: "text",
-        text: "What is the typical lifespan of a Green Sea Turtle?",
+        text: "What is the typical vocab_desc_two of a Green Sea csharp?",
         possibilities: [{
             answer: "150 years"
         }, {
@@ -44,27 +44,27 @@
         correct: null
     }, {
         type: "image",
-        text: "Which of these is the Alligator Snapping Turtle?",
+        text: "Which of these is the Alligator Snapping csharp?",
         possibilities: [{
             answer: "https://c1.staticflickr.com/3/2182/2399413165_bcc8031cac_z.jpg?zz=1"
         }, {
-            answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"
+            answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-csharp_688_600x450.jpg"
         }, {
-            answer: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-turtle-007.jpg"
+            answer: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-csharp-007.jpg"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
+            answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_csharp_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
         }],
         selected: null,
         correct: null
     }, {
         type: "image",
-        text: "Which of these is the Green Turtle?",
+        text: "Which of these is the Green csharp?",
         possibilities: [{
-            answer: "http://blog.mexi-go.ca/wp-content/uploads/2013/05/sea-turtle-swimming.jpg"
+            answer: "http://blog.mexi-go.ca/wp-content/uploads/2013/05/sea-csharp-swimming.jpg"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"
+            answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_csharp_nesting.JPG"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
+            answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_csharp_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
         }, {
             answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
         }],
@@ -72,7 +72,7 @@
         correct: null
     }, {
         type: "text",
-        text: "Where does the Kemp's Ridley Sea Turtle live?'",
+        text: "Where does the Kemp's Ridley Sea csharp live?'",
         possibilities: [{
             answer: "Tropical waters all around the world"
         }, {
@@ -86,27 +86,27 @@
         correct: null
     }, {
         type: "text",
-        text: "What is the most common turtle in US waters?",
+        text: "What is the most common csharp in US waters?",
         possibilities: [{
-            answer: "Loggerhead turtle"
+            answer: "Loggerhead csharp"
         }, {
-            answer: "Leatherback turtle"
+            answer: "Leatherback csharp"
         }, {
-            answer: "Hawksbill Turtle"
+            answer: "Hawksbill csharp"
         }, {
-            answer: "Alligator Snapping Turtle"
+            answer: "Alligator Snapping csharp"
         }],
         selected: null,
         correct: null
     }, {
         type: "text",
-        text: "What is the largest sea turtle on earth?",
+        text: "What is the largest sea csharp on earth?",
         possibilities: [{
-            answer: "Eastern Snake Necked Turtle"
+            answer: "Eastern Snake Necked csharp"
         }, {
-            answer: "Olive Ridley Sea Turtle"
+            answer: "Olive Ridley Sea csharp"
         }, {
-            answer: "Kemp's Ridley Sea Turtle'"
+            answer: "Kemp's Ridley Sea csharp'"
         }, {
             answer: "Leatherback"
         }],
@@ -114,21 +114,21 @@
         correct: null
     }, {
         type: "image",
-        text: "Which of these is the Olive Ridley Turtle?",
+        text: "Which of these is the Olive Ridley csharp?",
         possibilities: [{
-            answer: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg"
+            answer: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadcsharp_2651448b.jpg"
         }, {
             answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
         }, {
-            answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg"
+            answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-csharp_688_600x450.jpg"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG"
+            answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_csharp_nesting.JPG"
         }],
         selected: null,
         correct: null
     }, {
         type: "text",
-        text: "How Heavy can a leatherback turtle be?",
+        text: "How Heavy can a leatherback csharp be?",
         possibilities: [{
             answer: "900kg"
         }, {
@@ -142,84 +142,116 @@
         correct: null
     }, {
         type: "text",
-        text: "Which of these turtles are herbivores?",
+        text: "Which of these csharp_ are herbivores?",
         possibilities: [{
-            answer: "Loggerhead Turtle"
+            answer: "Loggerhead csharp"
         }, {
-            answer: "Hawksbill Turtle"
+            answer: "Hawksbill csharp"
         }, {
-            answer: "Leatherback Turtle"
+            answer: "Leatherback csharp"
         }, {
-            answer: "Green Turtle"
+            answer: "Green csharp"
         }],
         selected: null,
         correct: null
     }];
 
-    var turtlesData = [{
-        type: "Green Turtle",
-        image_url: "http://blog.mexi-go.ca/wp-content/uploads/2013/05/sea-turtle-swimming.jpg",
-        locations: "Tropical and subtropical oceans worldwide",
-        size: "Up to 1.5m and up to 300kg",
-        lifespan: "Over 80 years",
-        diet: "Herbivore",
-        description: "The green turtle is a large, weighty sea turtle with a wide, smooth carapace, or shell. It inhabits tropical and subtropical coastal waters around the world and has been observed clambering onto land to sunbathe. It is named not for the color of its shell, which is normally brown or olive depending on its habitat, but for the greenish color of its skin. There are two types of green turtles—scientists are currently debating whether they are subspecies or separate species—including the Atlantic green turtle, normally found off the shores of Europe and North America, and the Eastern Pacific green turtle, which has been found in coastal waters from Alaska to Chile."
+    var csharp_Data = [{
+        type: "Object Oriented Programming",
+        quiz: "Lesson 1",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Loggerhead Turtle",
-        image_url: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadTurtle_2651448b.jpg",
-        locations: "Tropical and subtropical oceans worldwide",
-        size: "90cm, 115kg",
-        lifespan: "More than 50 years",
-        diet: "Carnivore",
-        description: "Loggerhead turtles are the most abundant of all the marine turtle species in U.S. waters. But persistent population declines due to pollution, shrimp trawling, and development in their nesting areas, among other factors, have kept this wide-ranging seagoer on the threatened species list since 1978. Their enormous range encompasses all but the most frigid waters of the world's oceans. They seem to prefer coastal habitats, but often frequent inland water bodies and will travel hundreds of miles out to sea."
+        type: "Program Flow",
+        quiz: "Lesson 2",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Leatherback Turtle",
-        image_url: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-turtle-007.jpg",
-        locations: "All tropical and subtropical oceans",
-        size: "Up to 2m, up to 900kg",
-        lifespan: "45 years",
-        diet: "Carnivore",
-        description: "Leatherbacks are the largest turtles on Earth, growing up to seven feet (two meters) long and exceeding 2,000 pounds (900 kilograms). These reptilian relics are the only remaining representatives of a family of turtles that traces its evolutionary roots back more than 100 million years. Once prevalent in every ocean except the Arctic and Antarctic, the leatherback population is rapidly declining in many parts of the world. While all other sea turtles have hard, bony shells, the inky-blue carapace of the leatherback is somewhat flexible and almost rubbery to the touch. Ridges along the carapace help give it a more hydrodynamic structure. Leatherbacks can dive to depths of 4,200 feet (1,280 meters)—deeper than any other turtle—and can stay down for up to 85 minutes."
+        type: "Operators",
+        quiz: "Lesson 3",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Hawksbill Sea Turtle",
-        image_url: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532",
-        locations: "Tropical Coastal areas around the world",
-        size: "Over 1m, 45-68kg",
-        lifespan: "30-50 Years",
-        diet: "Carnivore",
-        description: "Dolor possimus voluptas hic aliquam rem doloremque minus maiores accusantium? Laborum perferendis harum blanditiis quod quia? Aspernatur sunt et fuga delectus ab rem excepturi. Ipsa quibusdam facere consequuntur magnam vitae? Consectetur consectetur necessitatibus beatae delectus quibusdam in! Est nobis omnis iusto illum fugiat maxime! Neque fugiat reiciendis sequi corrupti minima facere distinctio aliquam est voluptatibus. Sint incidunt soluta atque ducimus."
+        type: "Advanced OOP Concepts",
+        quiz: "Lesson 4",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Alligator Snapping Turtle",
-        image_url: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_turtle_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg",
-        locations: "Along the Atlantic Coast of USA",
-        size: "around 60cm, up to 100kg",
-        lifespan: "20-70 years",
-        diet: "Carnivore",
-        description: "The prehistoric-looking alligator snapping turtle is the largest freshwater turtle in North America and among the largest in the world. With its spiked shell, beaklike jaws, and thick, scaled tail, this species is often referred to as the 'dinosaur of the turtle world.' Found almost exclusively in the rivers, canals, and lakes of the southeastern United States, alligator snappers can live to be 50 to 100 years old. Males average 26 inches (66 centimeters) in shell length and weigh about 175 pounds (80 kilograms), although they have been known to exceed 220 pounds (100 kilograms). The much smaller females top out at around 50 pounds (23 kilograms)."
+        type: "Arrays and Methods",
+        quiz: "Lesson 5",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Kemp's Ridley Sea Turtle",
-        image_url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_turtle_nesting.JPG",
-        locations: "Coastal areas of the North Atlantic",
-        size: "65cm, up to 45kg",
-        lifespan: "Around 50 years",
-        diet: "Omnivore",
-        description: "The Kemp’s ridley turtle is the world’s most endangered sea turtle, and with a worldwide female nesting population roughly estimated at just 1,000 individuals, its survival truly hangs in the balance. Their perilous situation is attributed primarily to the over-harvesting of their eggs during the last century. And though their nesting grounds are protected and many commercial fishing fleets now use turtle excluder devices in their nets, these turtles have not been able to rebound. For this reason, their nesting processions, called arribadas, make for especially high drama. During an arribada, females take over entire portions of beaches, lugging their big bodies through the sand with their flippers until they find a satisfying spot to lay their eggs. Even more riveting is the later struggle to the ocean of each tiny, vulnerable hatchling. Beset by predators, hatchlings make this journey at night, breaking out of their shells using their caruncle, a single temporary tooth grown just for this purpose."
+        type: "Writing and Reading Files",
+        quiz: "Lesson 6",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Olive Ridley Turtle",
-        image_url: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-turtle_688_600x450.jpg",
-        locations: "Tropical coastal areas around the world",
-        size: "70cm, 45kg",
-        lifespan: "50 years",
-        diet: "Omnivore",
-        description: "The olive ridley turtle is named for the generally greenish color of its skin and shell, or carapace. It is closely related to the Kemp’s ridley, with the primary distinction being that olive ridleys are found only in warmer waters, including the southern Atlantic, Pacific and Indian Oceans. Olive and Kemp’s ridleys are the smallest of the sea turtles, weighing up to 100 pounds (45 kilograms) and reaching only about 2 feet (65 centimeters) in shell length. The olive ridley has a slightly smaller head and smaller shell than the Kemp’s."
+        type: "Modern Language Features",
+        quiz: "Lesson 7",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Eastern Snake Necked Turtle",
-        image_url: "https://c1.staticflickr.com/3/2182/2399413165_bcc8031cac_z.jpg?zz=1",
-        locations: "Eastern Australia",
-        size: "Up to 30cm",
-        lifespan: "25 years",
-        diet: "Carnivore",
-        description: "Snake-necked turtles, as the name suggests, have an unusually long neck. Their necks may be up to 60 percent of their carapace length. Their carapace is oval and flattened, usually dark-brown to black measuring up to 11 inches (27.5 cm) in length. Scutes are shed as the animals grow. The males have a longer, thicker tail than females and a concave plastron. They are excellent swimmers; they have large, webbed feet with sharp claws used to tear apart food."
+        type: "Getting Started With LINQ",
+        quiz: "Lesson 8",
+        image_url: "images/image1.png",
+        summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
+        vocab_word_one: "Encapsulation:",
+        vocab_word_two: "Inheritance:",
+        vocab_word_three: "Polymorphims:",
+        vocab_desc_one: " Grouping of data and functions into a single component. This will also allow seletive 'hiding' of data and functionalities. Security is a hot topic today, making sure a user is not a hacker so we focus on hiding some of the functionality. Some of this is for security and part of it is for simplicty and ease of use of objects. The best example of this is using a smart phone to make a telephone call. Now you can take any smart phone such as an iPhone, Android, Windows Phone and still understand how to make a call. As a new user, you may not understand how to make a call at first but it's not going to take long to learn. This is because the functionality is encapsulated into a providers system which is shared across different cell phone platforms.",
+        vocab_desc_two: " The second major aspect of object oriented programming. This is the process that enables one class to reuse code from another class. So a sungle object can posses the functionality of mulitple classes. Now, this is where we avoid code duplication. Inheritance provides the ability to extend and modify the behavior in a very easilty maintainble environment, allowing us to continue to seperate functionality into discrete sections or classes inside the code and then inherite the functionality into other classes that need it and allow those classes that are inheriting them to add additional functionality.",
+        vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
+        description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }];
 
 

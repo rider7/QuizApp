@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="turtleFacts">
+<html lang="en" ng-app="csharpFacts">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Turtle Facts and Quiz</title>
+    <title>C# Quiz App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-fixed-top" style="background-color: white">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="images/image1.png" style="height: 10px, width: 50px">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><strong>Sign In</strong></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Choose Quiz </strong><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Quiz 1</a></li>
+            <li><a href="#">Quiz 2</a></li>
+            <li><a href="#">Quiz 3</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Practice Test</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     <div class="container">
-        <div class="page-header">
-            <h1>Turtle Facts Quiz</h1>
-            <h3>
-          Learn about all the turtles below before you decide to take on the
-          <strong> TURTLE QUIZ </strong>
-      </h3>
-        </div>
+        <div class="title container-fluid" style="margin-top: 15vh; color: #082C46">
+            <h3 style="color: #082C46">
+              Take the quiz to test your <strong>C#</strong> knowledge!
+            </h3>
+          </div>
         <!-- Start List Controller -->
         <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
             <!-- ng-hide conditional on true or false -->
@@ -30,58 +61,60 @@
                 <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()"> <strong>Start Quiz</strong></button>
             </form>
             <div class="row">
-                <div class="col-sm-6" ng-repeat="turtle in list.data | filter:list.search">
-                    <!-- <p ng-repeat="turtle in list.data">
+                <div class="col-sm-6" ng-repeat="csharp in list.data | filter:list.search">
+                    <!-- <p ng-repeat="csharp in list.data">
                     pipe symbol for filter takes return value from ngrepeat and puts it into the filter, filtered by the search
                     if search term is inside the ngrepeat data it will show
-                    ngrepeat will loop through the data variable in the list controller with the JSON object referenced as turtle
-                    {{turtle.type}}
+                    ngrepeat will loop through the data variable in the list controller with the JSON object referenced as csharp
+                    {{csharp.type}}
                     by using dot notation .type we can access the type in the object
                     </p> -->
                     <div class="well well-sm">
                         <div class="row">
-                            <div class="col-md-6">
-                                <img ng-src="{{turtle.image_url}}" class="img-rounded img-responsive well-image">
+                            <div class="col-md-12">
+                              <h2><strong>{{csharp.quiz}}</strong></h2>
+                                <!-- <img ng-src="{{csharp.image_url}}" class="img-rounded img-responsive well-image"> -->
                                 <!-- ng-src is an angular directive that allows the browser to skip over the img until it has loaded angular -->
-                            </div>
-                            <div class="col-md-6">
-                                <h4> {{turtle.type}} </h4>
-                                <p><strong>Locations: </strong>{{turtle.locations}}</p>
-                                <p><strong>Size: </strong>{{turtle.size}}</p>
-                                <p><strong>Average: </strong>{{turtle.lifespan}}</p>
-                                <p><strong>Diet: </strong>{{turtle.diet}}</p>
-                                <button class="btn-primary pull-right" data-toggle="modal" data-target="#turtle-info" ng-click="list.changeActiveTurtle(turtle)">Learn More</button>
+
+                                <h4> {{csharp.type}} </h4>
+                                <p><strong>Summary: </strong>{{csharp.summary}}</p>
+                                <!-- <p><strong>vocab_word_one: </strong>{{csharp.vocab_word_one}}</p>
+                                <p><strong>Average: </strong>{{csharp.vocab_desc_one}}</p>
+                                <p><strong>vocab_desc_three: </strong>{{csharp.vocab_desc_three}}</p> -->
+                                <button class="btn-primary pull-right" data-toggle="modal" data-target="#csharp-info" ng-click="list.changeActivecsharp(csharp)">Vocab Review</button>
                                 <!-- data-toggle controls show/hide of collapsible element,
                                 data-target attribute will connect the button with the collapsible content,
                                 ng-click needs list. because we are using 'as' with our controller,
-                                the argument turtle is passed in when clicked and is the JSON from the ng-repeat -->
+                                the argument csharp is passed in when clicked and is the JSON from the ng-repeat -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal" id="turtle-info">
+            <div class="modal" id="csharp-info">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h2>{{list.activeTurtle.type}}</h2>
-                            <!-- references activeTurtle object property type -->
+                            <h2>{{list.activecsharp.type}}</h2>
+                            <!-- references activecsharp object property type -->
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2">
-                                    <img ng-src="{{list.activeTurtle.image_url}}" class="img-rounded img-responsive">
+                                    <img ng-src="{{list.activecsharp.image_url}}" class="img-rounded img-responsive">
                                 </div>
                             </div>
                             <div class="row top-buffer">
-                                <div class="col-md-6">
-                                    <p><strong>Locations: </strong>{{list.activeTurtle.locations}}</p>
-                                    <p><strong>Size: </strong>{{list.activeTurtle.size}}</p>
-                                    <p><strong>Average: </strong>{{list.activeTurtle.lifespan}}</p>
-                                    <p><strong>Diet: </strong>{{list.activeTurtle.diet}}</p>
+                                <div class="col-md-12">
+                                    <p><strong>{{list.activecsharp.vocab_word_one}}</strong></p>
+                                    <p>{{list.activecsharp.vocab_desc_one}}</p>
+                                    <p><strong>{{list.activecsharp.vocab_word_two}}</strong></p>
+                                    <p>{{list.activecsharp.vocab_desc_two}}</p>
+                                    <p><strong>{{list.activecsharp.vocab_word_three}}</strong></p>
+                                    <p><strong> </strong>{{list.activecsharp.vocab_desc_three}}</p>
                                 </div>
                                 <div class="col-xs-12 top-buffer">
-                                    <p>{{list.activeTurtle.description}}</p>
+                                    <!-- <p>{{list.activecsharp.description}}</p> -->
                                     <button class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
                                     <!-- data-dismiss is bootstrap to dismiss the modal -->
                                 </div>
@@ -227,6 +260,17 @@
         </div>
         <!-- End Results Controller -->
     </div>
+    <footer class="footer-container" style="background-color:#082C46; width: 100%">
+      <div class="row">
+        <div class="col-md-0" ></div>
+  <div class="col-xs-12 col-md-12" style="margin-top: 5vh; overflow: hidden;
+    white-space: nowrap">
+    <img src="images/image2.png"/>
+    <p style="color: white"> Austin Coding Academy: Affordable, Accessible, Coding Education. </p>
+  </div>
+  <div class="col-md-0"></div>
+</div>
+</footer>
     <!-- Third Party CDNs -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>

@@ -1,5 +1,5 @@
 (function() {
-    angular.module("turtleFacts")
+    angular.module("csharpFacts")
         .controller("listCtrl", ListController);
     // .controller("listCtrl", function(){}) also useable
 
@@ -17,15 +17,15 @@
         //setting the keyword 'this' to variable vm for viewmodel
         //vm.test = "This App Works";
         vm.quizMetrics = quizMetrics;
-        vm.data = DataService.turtlesData;
-        vm.activeTurtle = {};
-        vm.changeActiveTurtle = changeActiveTurtle;
+        vm.data = DataService.csharp_Data;
+        vm.activecsharp = {};
+        vm.changeActivecsharp = changeActivecsharp;
         vm.search = '';
         vm.activateQuiz = activateQuiz;
 
-        function changeActiveTurtle(index) {
-            vm.activeTurtle = index;
-            // index will be the turtle clicked on and set to activeTurtle object
+        function changeActivecsharp(index) {
+            vm.activecsharp = index;
+            // index will be the csharp clicked on and set to activecsharp object
         }
 
         function activateQuiz() {

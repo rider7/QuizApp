@@ -1,5 +1,5 @@
 (function() {
-    angular.module("turtleFacts")
+    angular.module("csharpFacts")
         .controller("quizCtrl", QuizController)
 
     QuizController.$inject = ["quizMetrics", "DataService"];
