@@ -16,7 +16,7 @@
 
     var quizQuestions = [{
         type: "text",
-        text: "How much can a loggerhead weigh?",
+        text: "What is C#?",
         possibilities: [{
             answer: "Up to 20kg"
         }, {
@@ -46,13 +46,13 @@
         type: "image",
         text: "Which of these is the Alligator Snapping csharp?",
         possibilities: [{
-            answer: "https://c1.staticflickr.com/3/2182/2399413165_bcc8031cac_z.jpg?zz=1"
+            answer: "images/image3.png"
         }, {
-            answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-csharp_688_600x450.jpg"
+            answer: "images/image3.png"
         }, {
-            answer: "https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2011/8/13/1313246505515/Leatherback-csharp-007.jpg"
+            answer: "images/image3.png"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_csharp_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
+            answer: "images/image3.png"
         }],
         selected: null,
         correct: null
@@ -60,13 +60,13 @@
         type: "image",
         text: "Which of these is the Green csharp?",
         possibilities: [{
-            answer: "http://blog.mexi-go.ca/wp-content/uploads/2013/05/sea-csharp-swimming.jpg"
+            answer: "images/image3.png"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_csharp_nesting.JPG"
+            answer: "images/image3.png"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Alligator_snapping_csharp_-_Geierschildkr%C3%B6te_-_Alligatorschildkr%C3%B6te_-_Macrochelys_temminckii_01.jpg"
+            answer: "images/image3.png"
         }, {
-            answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
+            answer: "images/image3.png"
         }],
         selected: null,
         correct: null
@@ -116,13 +116,13 @@
         type: "image",
         text: "Which of these is the Olive Ridley csharp?",
         possibilities: [{
-            answer: "http://i.telegraph.co.uk/multimedia/archive/02651/loggerheadcsharp_2651448b.jpg"
+            answer: "images/image3.png"
         }, {
-            answer: "http://assets.worldwildlife.org/photos/163/images/carousel_small/SCR_290360hawskbill-why-matter-LG.jpg?1345565532"
+            answer: "images/image3.png"
         }, {
-            answer: "http://images.nationalgeographic.com/wpf/media-live/photos/000/006/cache/ridley-sea-csharp_688_600x450.jpg"
+            answer: "images/image3.png"
         }, {
-            answer: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Kemp's_Ridley_sea_csharp_nesting.JPG"
+            answer: "images/image3.png"
         }],
         selected: null,
         correct: null

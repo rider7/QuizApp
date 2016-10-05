@@ -157,7 +157,7 @@
                     <button class="close" ng-click="quiz.error = false">&times</button>
                 </div>
                 <h3>Question: </h3>
-                <div class="well well-sm" ng-hide="quiz.finalize">
+                <div class="well well-sm" ng-hide="quiz.finalize"  style="margin-bottom: 10vh">
                     <div class="row">
                         <div class="col-xs-12">
                             <h4>{{quiz.activeQuestion+1 + ". "+ quiz.dataService.quizQuestions[quiz.activeQuestion].text}}</h4>
@@ -180,7 +180,7 @@
                     </div>
                     <button class="btn btn-warning" ng-click="quiz.questionAnswered()">Continue</button>
                 </div>
-                <div class="well well-sm" ng-show="quiz.finalize">
+                <div class="well well-sm" ng-show="quiz.finalize" style="margin-bottom: 20vh">
                     <!-- ng-show if quiz.finalize equates to true -->
                     <div class="row">
                         <div class="col-xs-12">
@@ -266,7 +266,7 @@
   <div class="col-xs-12 col-md-12" style="margin-top: 5vh; overflow: hidden;
     white-space: nowrap">
     <img src="images/image2.png"/>
-    <p style="color: white"> Austin Coding Academy: Affordable, Accessible, Coding Education. </p>
+    <p style="color: white; padding-bottom: 10vh; padding-top: 2vh"> Austin Coding Academy: Affordable, Accessible, Coding Education. </p>
   </div>
   <div class="col-md-0"></div>
 </div>
