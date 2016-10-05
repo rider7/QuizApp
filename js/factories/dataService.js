@@ -241,7 +241,7 @@
         vocab_desc_three: " It's the natural result of inheritance and encapsulation working together. What's going to happen here is we are going to end up with multiple classes that have the same method or action name in there. So we can have one class tha thas a functionality called savefile, and it's saving the file in a location and we have another class with the same name saving to a database. They share the same name but we want to call the correct method when the times comes and very different actions will be taken. As far as the end user and sometimes the developer is concerned, we simple just call the appropriate method with that name. The difference is based on the context on how the method is called and where it's called from. Overall, an inheritance of classes and objets can provide multiple functions having the same name, but provide different functionalities.",
         description: "Object oriented programming is a term you will hear and read about often. Not only when it comes to C# but other modern programming languages. Terminology can be very important when you are understanding all the concepts and fully graps all the functionality of a programming language."
     }, {
-        type: "Getting Started With LINQ",
+        type: "Getting Started with LINQ",
         quiz: "Lesson 8",
         image_url: "images/image1.png",
         summary: "Object Oriented Programming really helps us create very efficient applications that can be very easily maintained even extended and changed. To really appreciate this, you would have to have experience working with some of the non-objected oritened languages such as basic or C that required a structured line by line set of instructions that would start from top to bottom running in order.",
