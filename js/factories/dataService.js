@@ -12,39 +12,39 @@
         return dataObj;
     }
 
-    var correctAnswers = [1, 2, 3, 0, 2, 0, 3, 2, 0, 3];
+    var correctAnswers = [1, 3, 3, 0, 2, 0, 3, 2, 0, 3];
 
     var quizQuestions = [{
         type: "text",
-        text: "What is C#?",
+        text: "You are developing an application by using C#.The application includes an object that performs a long running process.You need to ensure that the garbage collector does not release the object’s resources until the process completes.Which garbage collector method should you use?",
         possibilities: [{
-            answer: "Up to 20kg"
+            answer: "ReRegisterForFinalize()"
         }, {
-            answer: "Up to 115kg"
+            answer: "SuppressFinalize()"
         }, {
-            answer: "Up to 220kg"
+            answer: "Collect()"
         }, {
-            answer: "Up to 500kg"
+            answer: "WaitForFullGCApproach()"
         }],
         selected: null,
         correct: null
     }, {
         type: "text",
-        text: "What is the typical vocab_desc_two of a Green Sea csharp?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
-            answer: "150 years"
+            answer: "Assembly.GetAssembly(this);"
         }, {
-            answer: "10 years"
+            answer: "This.GetType();"
         }, {
-            answer: "80 years"
+            answer: "Assembly.Load ();"
         }, {
-            answer: "40 years"
+            answer: "Assembly.GetExecutingAssembly ();"
         }],
         selected: null,
         correct: null
     }, {
         type: "image",
-        text: "Which of these is the Alligator Snapping csharp?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
             answer: "images/image3.png"
         }, {
@@ -58,7 +58,7 @@
         correct: null
     }, {
         type: "image",
-        text: "Which of these is the Green csharp?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
             answer: "images/image3.png"
         }, {
@@ -72,49 +72,49 @@
         correct: null
     }, {
         type: "text",
-        text: "Where does the Kemp's Ridley Sea csharp live?'",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?'",
         possibilities: [{
-            answer: "Tropical waters all around the world"
+            answer: "ReRegisterForFinalize()"
         }, {
-            answer: "Eastern Australia"
+            answer: "SuppressFinalize()"
         }, {
-            answer: "Coastal North Atlantic"
+            answer: "Collect()"
         }, {
-            answer: "South pacific islands"
+            answer: "WaitForFullGCApproach()"
         }],
         selected: null,
         correct: null
     }, {
         type: "text",
-        text: "What is the most common csharp in US waters?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
-            answer: "Loggerhead csharp"
+            answer: "ReRegisterForFinalize()"
         }, {
-            answer: "Leatherback csharp"
+            answer: "SuppressFinalize()"
         }, {
-            answer: "Hawksbill csharp"
+            answer: "Collect()"
         }, {
-            answer: "Alligator Snapping csharp"
+            answer: "WaitForFullGCApproach()"
         }],
         selected: null,
         correct: null
     }, {
         type: "text",
-        text: "What is the largest sea csharp on earth?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
-            answer: "Eastern Snake Necked csharp"
+            answer: "ReRegisterForFinalize()"
         }, {
-            answer: "Olive Ridley Sea csharp"
+            answer: "SuppressFinalize()"
         }, {
-            answer: "Kemp's Ridley Sea csharp'"
+            answer: "Collect()"
         }, {
-            answer: "Leatherback"
+            answer: "WaitForFullGCApproach()"
         }],
         selected: null,
         correct: null
     }, {
         type: "image",
-        text: "Which of these is the Olive Ridley csharp?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
             answer: "images/image3.png"
         }, {
@@ -128,29 +128,29 @@
         correct: null
     }, {
         type: "text",
-        text: "How Heavy can a leatherback csharp be?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
-            answer: "900kg"
+            answer: "ReRegisterForFinalize()"
         }, {
-            answer: "40kg"
+            answer: "SuppressFinalize()"
         }, {
-            answer: "110kg"
+            answer: "Collect()"
         }, {
-            answer: "300kg"
+            answer: "WaitForFullGCApproach()"
         }],
         selected: null,
         correct: null
     }, {
         type: "text",
-        text: "Which of these csharp_ are herbivores?",
+        text: "You are creating a console application by using C#. You need to access the application assembly. Which code segment should you use?",
         possibilities: [{
-            answer: "Loggerhead csharp"
+            answer: "ReRegisterForFinalize()"
         }, {
-            answer: "Hawksbill csharp"
+            answer: "SuppressFinalize()"
         }, {
-            answer: "Leatherback csharp"
+            answer: "Collect()"
         }, {
-            answer: "Green csharp"
+            answer: "WaitForFullGCApproach()"
         }],
         selected: null,
         correct: null
