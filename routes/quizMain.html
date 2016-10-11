@@ -1,0 +1,217 @@
+<div class="container">
+    <div class="title container-fluid" style="margin-top: 15vh; color: #082C46">
+        <h3 style="color: #082C46">
+          Take the quiz to test your <strong>C#</strong> knowledge!
+        </h3>
+      </div>
+    <!-- Start List Controller -->
+    <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
+        <!-- ng-hide conditional on true or false -->
+        <!-- 'as' allows you to make a keyword like 'list' to define which controller you are using to bind data by putting "list."-->
+        <!-- {{list.test}}-->
+        <form class="form-inline well well-sm clearfix">
+            <span class="glyphicon glyphicon-search"></span>
+            <input type="text" placeholder="Search..." class="form-control" ng-model="list.search">
+            <!-- ng-model allows ups to bind input text to controller property -->
+            <button class="btn btn-warning pull-right" ng-click="list.activateQuiz()"> <strong>Start Quiz</strong></button>
+        </form>
+        <div class="row">
+            <div class="col-sm-6" ng-repeat="csharp in list.data | filter:list.search">
+                <!-- <p ng-repeat="csharp in list.data">
+                pipe symbol for filter takes return value from ngrepeat and puts it into the filter, filtered by the search
+                if search term is inside the ngrepeat data it will show
+                ngrepeat will loop through the data variable in the list controller with the JSON object referenced as csharp
+                {{csharp.type}}
+                by using dot notation .type we can access the type in the object
+                </p> -->
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <h2><strong>{{csharp.quiz}}</strong></h2>
+                            <!-- <img ng-src="{{csharp.image_url}}" class="img-rounded img-responsive well-image"> -->
+                            <!-- ng-src is an angular directive that allows the browser to skip over the img until it has loaded angular -->
+
+                            <h4> {{csharp.type}} </h4>
+                            <p><strong>Summary: </strong>{{csharp.summary}}</p>
+                            <!-- <p><strong>vocab_word_one: </strong>{{csharp.vocab_word_one}}</p>
+                            <p><strong>Average: </strong>{{csharp.vocab_desc_one}}</p>
+                            <p><strong>vocab_desc_three: </strong>{{csharp.vocab_desc_three}}</p> -->
+                            <button class="btn-primary pull-right" data-toggle="modal" data-target="#csharp-info" ng-click="list.changeActivecsharp(csharp)">Vocab Review</button>
+                            <!-- data-toggle controls show/hide of collapsible element,
+                            data-target attribute will connect the button with the collapsible content,
+                            ng-click needs list. because we are using 'as' with our controller,
+                            the argument csharp is passed in when clicked and is the JSON from the ng-repeat -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="csharp-info">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>{{list.activecsharp.type}}</h2>
+                        <!-- references activecsharp object property type -->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-8 col-xs-offset-2">
+                                <img ng-src="{{list.activecsharp.image_url}}" class="img-rounded img-responsive">
+                            </div>
+                        </div>
+                        <div class="row top-buffer">
+                            <div class="col-md-12">
+                                <p><strong>{{list.activecsharp.vocab_word_one}}</strong></p>
+                                <p>{{list.activecsharp.vocab_desc_one}}</p>
+                                <p><strong>{{list.activecsharp.vocab_word_two}}</strong></p>
+                                <p>{{list.activecsharp.vocab_desc_two}}</p>
+                                <p><strong>{{list.activecsharp.vocab_word_three}}</strong></p>
+                                <p><strong> </strong>{{list.activecsharp.vocab_desc_three}}</p>
+                            </div>
+                            <div class="col-xs-12 top-buffer">
+                                <!-- <p>{{list.activecsharp.description}}</p> -->
+                                <button class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+                                <!-- data-dismiss is bootstrap to dismiss the modal -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End List Controller -->
+    <!-- Start Quiz Controller -->
+    <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
+        <div class="row">
+            <div class="col-xs-8">
+                <h2>Progress: </h2>
+                <div class="btn-toolbar">
+                    <button class="btn" ng-repeat="question in quiz.dataService.quizQuestions" ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}" ng-click="quiz.setActiveQuestion($index)">
+                        <span class="glyphicon" ng-class="{'glyphicon-pencil': question.selected !== null, 'glyphicon-question-sign': question.selected === null}"></span></button>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="row">
+                    <h4>Legend: </h4>
+                    <div class="col-sm-4">
+                        <button class="btn btn-info">
+                            <span class="glyphicon glyphicon-pencil"></span></button>
+                        <p>Answered</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="btn btn-danger">
+                            <span class="glyphicon glyphicon-question-sign"></span></button>
+                        <p>Unanswered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="alert alert-danger" ng-show="quiz.error">
+                Error! You have not answered all of the questions!
+                <button class="close" ng-click="quiz.error = false">&times</button>
+            </div>
+            <h3>Question: </h3>
+            <div class="well well-sm" ng-hide="quiz.finalize"  style="margin-bottom: 10vh">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4>{{quiz.activeQuestion+1 + ". "+ quiz.dataService.quizQuestions[quiz.activeQuestion].text}}</h4>
+                        <div class="row" ng-if="quiz.dataService.quizQuestions[quiz.activeQuestion].type === 'text'">
+                            <!-- if current question is of .type text then render the code -->
+                            <div class="col-sm-6" ng-repeat="answer in quiz.dataService.quizQuestions[quiz.activeQuestion].possibilities">
+                                <h4 class="answer" ng-class="{'bg-info': $index === quiz.dataService.quizQuestions[quiz.activeQuestion].selected}" ng-click="quiz.selectAnswer($index)">{{answer.answer}}</h4>
+                                <!-- $index gives a number for the iteration of the ngrepeat loop -->
+                            </div>
+                        </div>
+                        <div class="row" ng-if="quiz.dataService.quizQuestions[quiz.activeQuestion].type === 'image'">
+                            <div class="col-sm-6" ng-repeat="answer in quiz.dataService.quizQuestions[quiz.activeQuestion].possibilities">
+                                <!-- if current question is of .type image then render the code -->
+                                <div class="image-answer" ng-class="{'image-selected': $index === quiz.dataService.quizQuestions[quiz.activeQuestion].selected}" ng-click="quiz.selectAnswer($index)">
+                                    <img ng-src="{{answer.answer}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning" ng-click="quiz.questionAnswered()">Continue</button>
+            </div>
+            <div class="well well-sm" ng-show="quiz.finalize" style="margin-bottom: 20vh">
+                <!-- ng-show if quiz.finalize equates to true -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Are you sure you want to submit your answers?</h3>
+                        <button class="btn btn-success" ng-click="quiz.finalizeAnswers()">Yes</button>
+                        <button class="btn btn-danger" ng-click="quiz.finalize = false">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Quiz Controller -->
+    <!-- Start Results Controller -->
+    <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
+        <div class="row">
+            <div class="col-xs-8">
+                <h2>Results: </h2>
+                <div class="btn-toolbar">
+                    <button class="btn" ng-repeat="question in results.DataService.quizQuestions" ng-class="{'btn-success': question.correct, 'btn-danger': !question.correct}" ng-click="results.setActiveQuestion($index)">
+                        <span class="glyphicon" ng-class="{'glyphicon-ok': question.correct, 'glyphicon-remove': !question.correct}"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="row">
+                    <h4>Legend: </h4>
+                    <div class="col-sm-4">
+                        <button class="btn btn-success">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                        <p>Correct</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                        <p>Incorrect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 top-buffer">
+                <h2>You Scored {{results.quizMetrics.numCorrect}} / {{results.DataService.quizQuestions.length}}</h2>
+                <h2><strong>{{results.calculatePer() | number:2}}%</strong></h2>
+                <!-- using pipe is another filter called number that filters to the amount of decimal places which we want 2 -->
+            </div>
+
+
+        </div>
+        <div class="row">
+            <h3>Questions: </h3>
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4>{{results.activeQuestion+1 +". "+results.DataService.quizQuestions[results.activeQuestion].text}}</h4>
+                        <div class="row" ng-if="results.DataService.quizQuestions[results.activeQuestion].type === 'text'">
+                            <div class="col-sm-6" ng-repeat="answer in results.DataService.quizQuestions[results.activeQuestion].possibilities">
+                                <h4 class="answer" ng-class="results.getAnswerClass($index)">
+                                  {{answer.answer}}
+                                <p class="pull-right" ng-show="$index !== results.quizMetrics.correctAnswers[results.activeQuestion] && $index === results.DataService.quizQuestions[results.activeQuestion].selected">Your Answer</p>
+                                <p class="pull-right" ng-show="$index === results.quizMetrics.correctAnswers[results.activeQuestion]">Correct Answer</p></h4>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="results.DataService.quizQuestions[results.activeQuestion].type === 'image'">
+                            <div class="col-sm-6" ng-repeat="answer in results.DataService.quizQuestions[results.activeQuestion].possibilities">
+                                <div class="image-answer" ng-class="results.getAnswerClass($index)">
+                                    <img ng-src="{{answer.answer}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg" style="margin-bottom: 2vh" ng-click="results.reset()">Go Back To Facts</button>
+        </div>
+    </div>
+    <!-- End Results Controller -->
+</div>
